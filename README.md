@@ -1,5 +1,10 @@
 # Cerebro
 
+[![CI](https://github.com/three-broke-girls/cerebro/actions/workflows/ci.yml/badge.svg)](https://github.com/three-broke-girls/cerebro/actions/workflows/ci.yml)
+[![npm version](https://badge.fury.io/js/@three-broke-girls%2Fcerebro.svg)](https://badge.fury.io/js/@three-broke-girls%2Fcerebro)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Node.js Version](https://img.shields.io/badge/node-%3E%3D16.0.0-brightgreen)](https://nodejs.org/)
+
 > *"Managing AGENT.md and CLAUDE.md files shouldn't be a chore"*
 
 I built Cerebro because I was constantly rebuilding AGENT.md and CLAUDE.md files from scratch for every AI project. You know the drill: new project, copy-paste Python guidelines from that one project three months ago, find the React patterns from another repo, dig through old files for API documentation standards. It got old fast.
