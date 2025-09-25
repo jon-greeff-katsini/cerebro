@@ -92,44 +92,51 @@ yarn link
 ### Your First Steps
 
 ```bash
-# See what templates you've got
+# See what agent templates you've got
 cerebro list
 
-# Add a Python section to your AGENT.md
+# Add Python guidelines to your AGENT.md (default target)
 cerebro add python
 
-# Or add it to a different file
-cerebro add python -f my-awesome-project.md
+# Add React patterns to a specific CLAUDE.md file
+cerebro add react -f CLAUDE.md
 
 # Remove a section when you don't need it anymore
 cerebro remove python
 
-# Import a section from an existing file
-cerebro import javascript my-existing-docs.md
+# Import a section from another agent file
+cerebro import api-standards ../other-project/AGENT.md
 ```
 
 ## Real-World Examples
 
-Let's say you're starting a new Python project and want to add your coding standards:
+### Setting Up a New AI Project
+
+You're starting a new Python AI project and need to configure your agent:
 
 ```bash
 # Check what templates you have
 $ cerebro list
 Available templates:
   - python
-  - javascript
-  - go
+  - api-docs
+  - testing-patterns
+  - claude-code-config
 
-# Add Python guidelines to your project README
-$ cerebro add python -f README.md
-Added section 'python' to README.md
+# Add Python standards to your AGENT.md
+$ cerebro add python
+Added section 'python' to AGENT.md
+
+# Add API documentation guidelines
+$ cerebro add api-docs
+Added section 'api-docs' to AGENT.md
 ```
 
-Your README.md now contains:
+Your AGENT.md now contains:
 ```markdown
-# My Awesome Project
+# AI Agent Configuration
 
-Some project description here.
+This agent specializes in Python development with API integration.
 
 ## python
 
@@ -148,17 +155,43 @@ This project uses the following Python coding standards and conventions:
 - Use meaningful variable and function names.
 - Always use type hints for function signatures.
 - Use f-strings for string formatting.
+
+## api-docs
+
+When creating API documentation, follow these guidelines:
+
+### REST API Standards
+- Use clear, descriptive endpoint names
+- Include request/response examples
+- Document all error codes and responses
 ```
 
-Got a great coding standard in another project? Import it:
+### Importing from Existing Projects
+
+Found a great agent configuration in another project? Bring it over:
 
 ```bash
-# Import a section from your old project
-$ cerebro import react-patterns ../old-project/README.md
-Imported template 'react-patterns' from ../old-project/README.md
+# Import Claude Code configuration from another project
+$ cerebro import claude-setup ../successful-project/CLAUDE.md
+Imported template 'claude-setup' from ../successful-project/CLAUDE.md
 
-# Now you can use it in any project
-$ cerebro add react-patterns -f new-project-README.md
+# Now use it in your current project
+$ cerebro add claude-setup -f CLAUDE.md
+Added section 'claude-setup' to CLAUDE.md
+```
+
+### Team Workflow
+
+Your team shares a template repository:
+
+```bash
+# Point to your team's shared templates
+export CEREBRO_TEMPLATE_PATH=/shared/ai-templates
+
+# Everyone gets the same standards
+cerebro add company-python-standards
+cerebro add react-agent-patterns
+cerebro add api-integration-guidelines
 ```
 
 ## Configuration

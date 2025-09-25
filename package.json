@@ -1,7 +1,7 @@
 {
   "name": "@three-broke-girls/cerebro",
   "version": "1.0.0",
-  "description": "A command-line tool for managing markdown files with configurable template library",
+  "description": "A CLI tool for managing AGENT.md and CLAUDE.md files with reusable template sections",
   "main": "src/index.js",
   "bin": {
     "cerebro": "./src/cli.js"
@@ -14,7 +14,7 @@
     "lint:fix": "eslint src/ tests/ --fix",
     "ci": "yarn lint && yarn test"
   },
-  "keywords": ["cli", "markdown", "templates", "agent", "documentation", "template-manager"],
+  "keywords": ["cli", "agent", "claude", "ai", "markdown", "templates", "agent-md", "claude-md", "documentation"],
   "author": "three-broke-girls",
   "license": "MIT",
   "repository": {
