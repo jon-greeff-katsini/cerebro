@@ -19,11 +19,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/three-broke-girls/cerebro.git"
+    "url": "https://github.com/jon-greeff-katsini/cerebro.git"
   },
-  "homepage": "https://github.com/three-broke-girls/cerebro#readme",
+  "homepage": "https://github.com/jon-greeff-katsini/cerebro#readme",
   "bugs": {
-    "url": "https://github.com/three-broke-girls/cerebro/issues"
+    "url": "https://github.com/jon-greeff-katsini/cerebro/issues"
   },
   "engines": {
     "node": ">=16.0.0"

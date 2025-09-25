@@ -13,7 +13,7 @@ on:
 jobs:
   publish:
     runs-on: ubuntu-latest
-    if: github.repository == 'three-broke-girls/cerebro'
+    if: github.repository == 'jon-greeff-katsini/cerebro'
 
     steps:
       - name: Checkout repository

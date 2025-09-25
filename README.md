@@ -1,6 +1,6 @@
 # Cerebro
 
-[![CI](https://github.com/three-broke-girls/cerebro/actions/workflows/ci.yml/badge.svg)](https://github.com/three-broke-girls/cerebro/actions/workflows/ci.yml)
+[![CI](https://github.com/jon-greeff-katsini/cerebro/actions/workflows/ci.yml/badge.svg)](https://github.com/jon-greeff-katsini/cerebro/actions/workflows/ci.yml)
 [![npm version](https://badge.fury.io/js/@three-broke-girls%2Fcerebro.svg)](https://badge.fury.io/js/@three-broke-girls%2Fcerebro)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Node.js Version](https://img.shields.io/badge/node-%3E%3D16.0.0-brightgreen)](https://nodejs.org/)
